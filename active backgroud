@@ -1,0 +1,13 @@
+from tkinter import*
+from tkinter import messagebox
+wind=TK()
+wind.geometry("300,500")
+def fun():
+  messagebox.showinfo("blue button is clicked")
+b1=Button(wind,text="hii",bg="red",fg="black",width=5,hieght=5)
+b1.pack(left)
+b2=Button(wind,text="hello",bg="yellow",fg="black",width=5,hieght=5,activebackgroud="pink")
+b2.pack(top)
+b3=Button(wind,text="hii",bg="blue",fg="black",width=5,hieght=5,command=fun())
+b3.pack(Bottom)
+wind.mainloop()
